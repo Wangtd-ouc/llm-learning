@@ -1,0 +1,91 @@
+{
+  "total": 6,
+  "passed": 6,
+  "pass_rate": 1.0,
+  "cases": [
+    {
+      "question": "请计算 23*17 等于多少？",
+      "expect_tools": [
+        "calc"
+      ],
+      "tools_used": [
+        "calc"
+      ],
+      "tools_ok": true,
+      "answer_ok": true,
+      "answer_preview": "391",
+      "pass": true
+    },
+    {
+      "question": "查询股票 600519 的价格，买 10 手需要多少钱？",
+      "expect_tools": [
+        "get_stock_price",
+        "calc"
+      ],
+      "tools_used": [
+        "get_stock_price",
+        "calc"
+      ],
+      "tools_ok": true,
+      "answer_ok": true,
+      "answer_preview": "购买 10 手股票 600519 需要 1500000.0 元",
+      "pass": true
+    },
+    {
+      "question": "现在几点？",
+      "expect_tools": [
+        "get_current_time"
+      ],
+      "tools_used": [
+        "get_current_time"
+      ],
+      "tools_ok": true,
+      "answer_ok": true,
+      "answer_preview": "现在是 2026 年 8 月 28 日 星期二 22 时 32 分 31 秒",
+      "pass": true
+    },
+    {
+      "question": "LoRA 主要微调的是什么参数？",
+      "expect_tools": [
+        "search_knowledge"
+      ],
+      "tools_used": [
+        "search_knowledge"
+      ],
+      "tools_ok": true,
+      "answer_ok": true,
+      "answer_preview": "LoRA 主要微调的是插入到模型线性层（如注意力机制或全连接层）中的低秩适配器参数（Low-Rank Adapter Parameters）。它通过冻结预训练模",
+      "pass": true
+    },
+    {
+      "question": "RAG 的五个环节是什么？",
+      "expect_tools": [
+        "search_knowledge"
+      ],
+      "tools_used": [
+        "search_knowledge"
+      ],
+      "tools_ok": true,
+      "answer_ok": true,
+      "answer_preview": "RAG（检索增强生成）的标准五个环节如下：\n1. **文档切块（Chunking）**：将长文档按段落、标题或固定长度切割成小块，并保留来源信息。\n2. **向",
+      "pass": true
+    },
+    {
+      "question": "查询美元兑人民币汇率，然后计算 100 美元等于多少人民币？",
+      "expect_tools": [
+        "get_exchange_rate",
+        "calc"
+      ],
+      "tools_used": [
+        "get_exchange_rate",
+        "calc"
+      ],
+      "tools_ok": true,
+      "answer_ok": true,
+      "answer_preview": "100 美元等于 720.0 人民币",
+      "pass": true
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "note": "工具维度：预期工具是否都被调用；答案维度：最终回答是否包含预期关键词"
+}

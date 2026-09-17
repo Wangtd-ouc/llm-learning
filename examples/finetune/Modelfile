@@ -1,0 +1,13 @@
+# 把“微调合并后的模型”加载为 Ollama 本地模型
+FROM ./merged_model
+
+# Qwen2.5 的聊天模板
+TEMPLATE """{{- if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{- end }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+"""
+
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"

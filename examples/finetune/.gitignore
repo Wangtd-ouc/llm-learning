@@ -1,0 +1,5 @@
+.venv/
+adapters/
+merged_model/
+data_lora/
+__pycache__/

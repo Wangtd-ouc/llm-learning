@@ -1,0 +1,100 @@
+{
+  "total": 10,
+  "eval_set": [
+    {
+      "question": "LoRA 主要微调的是什么参数？",
+      "expected": "lora-finetune.md",
+      "tfidf_top1": "lora-finetune.md",
+      "vector_top1": "lora-finetune.md",
+      "tfidf_recall3": true,
+      "vector_recall3": true
+    },
+    {
+      "question": "什么是 QLoRA？",
+      "expected": "lora-finetune.md",
+      "tfidf_top1": "lora-finetune.md",
+      "vector_top1": "lora-finetune.md",
+      "tfidf_recall3": true,
+      "vector_recall3": true
+    },
+    {
+      "question": "微调的数据格式是什么？",
+      "expected": "lora-finetune.md",
+      "tfidf_top1": "lora-finetune.md",
+      "vector_top1": "lora-finetune.md",
+      "tfidf_recall3": true,
+      "vector_recall3": true
+    },
+    {
+      "question": "什么时候该用微调？",
+      "expected": "lora-finetune.md",
+      "tfidf_top1": "lora-finetune.md",
+      "vector_top1": "lora-finetune.md",
+      "tfidf_recall3": true,
+      "vector_recall3": true
+    },
+    {
+      "question": "RAG 的五个环节是什么？",
+      "expected": "rag-qa.md",
+      "tfidf_top1": "rag-qa.md",
+      "vector_top1": "rag-qa.md",
+      "tfidf_recall3": true,
+      "vector_recall3": true
+    },
+    {
+      "question": "为什么需要 RAG？",
+      "expected": "rag-qa.md",
+      "tfidf_top1": "rag-qa.md",
+      "vector_top1": "rag-qa.md",
+      "tfidf_recall3": true,
+      "vector_recall3": true
+    },
+    {
+      "question": "检索质量怎么评价？",
+      "expected": "rag-qa.md",
+      "tfidf_top1": "rag-qa.md",
+      "vector_top1": "lora-finetune.md",
+      "tfidf_recall3": true,
+      "vector_recall3": true
+    },
+    {
+      "question": "Transformer 的自注意力是什么？",
+      "expected": "llm-transformer.md",
+      "tfidf_top1": "llm-transformer.md",
+      "vector_top1": "llm-transformer.md",
+      "tfidf_recall3": true,
+      "vector_recall3": true
+    },
+    {
+      "question": "上下文窗口是什么？",
+      "expected": "llm-transformer.md",
+      "tfidf_top1": "llm-transformer.md",
+      "vector_top1": "llm-transformer.md",
+      "tfidf_recall3": true,
+      "vector_recall3": true
+    },
+    {
+      "question": "位置编码有什么作用？",
+      "expected": "llm-transformer.md",
+      "tfidf_top1": "llm-transformer.md",
+      "vector_top1": "lora-finetune.md",
+      "tfidf_recall3": true,
+      "vector_recall3": false
+    }
+  ],
+  "summary": {
+    "recall@1": {
+      "tfidf": 1.0,
+      "vector": 0.8
+    },
+    "recall@3": {
+      "tfidf": 1.0,
+      "vector": 0.9
+    },
+    "recall@5": {
+      "tfidf": 1.0,
+      "vector": 1.0
+    }
+  },
+  "retriever_note": "TF-IDF 靠关键词重合；向量检索用 nomic-embed-text 语义相似度"
+}

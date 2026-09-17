@@ -1,0 +1,17 @@
+# 系统文件
+.DS_Store
+
+# Python 缓存与虚拟环境
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 微调产物（体积大，可本地重新生成）
+adapters/
+merged_model/
+data_lora/
+
+# 编辑器
+.vscode/
+.idea/
